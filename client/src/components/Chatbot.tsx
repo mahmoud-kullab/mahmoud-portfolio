@@ -15,20 +15,20 @@ interface Message {
 
 const chatbotResponses: Record<string, { en: string; ar: string }> = {
   'skills': {
-    en: '🎯 My Core Skills:\n• IT Support & Hardware Maintenance\n• Cybersecurity & Penetration Testing\n• Network Administration (Cisco, IPv4/IPv6)\n• Windows & Linux Administration\n• PowerShell & BAT Scripting\n• Java Programming & OOP\n• Software Diagnostics & System Optimization\n\nI\'ve mastered 100+ technical tools across these domains.',
-    ar: '🎯 مهاراتي الأساسية:\n• دعم تقنية المعلومات وصيانة الأجهزة\n• الأمن السيبراني واختبار الاختراق\n• إدارة الشبكات (Cisco، IPv4/IPv6)\n• إدارة Windows و Linux\n• برمجة PowerShell و BAT\n• برمجة Java و OOP\n• التشخيص البرمجي وتحسين الأداء\n\nأتقنت أكثر من 100 أداة تقنية في هذه المجالات.'
+    en: 'I have advanced skills in IT Support, Hardware Maintenance, Software Diagnostics, Windows Administration, PowerShell & BAT scripting. I also have intermediate knowledge in Cybersecurity, Networking (IPv4/IPv6), Linux, and Java programming.',
+    ar: 'لدي مهارات متقدمة في دعم تقنية المعلومات وصيانة الأجهزة والتشخيص البرمجي وإدارة Windows و PowerShell و BAT. لدي أيضاً معرفة متوسطة بالأمن السيبراني والشبكات و Linux والبرمجة بـ Java.'
   },
   'experience': {
-    en: '💼 5+ Years of Practical Experience:\n• ICT Specialist at Palestinian Red Crescent Society (Jan 2024 - Present)\n• Self-employed IT Technician & Programmer (2019 - Present)\n• Logistics Worker - UNICEF Polio Campaign (Sep-Oct 2024)\n\nSpecialized in IT support, hardware maintenance, cybersecurity, and system administration for organizations and individuals.',
-    ar: '💼 5+ سنوات من الخبرة العملية:\n• متخصص تقنية معلومات في جمعية الهلال الأحمر الفلسطيني (يناير 2024 - الحالي)\n• فني تقنية معلومات ومبرمج عامل حر (2019 - الحالي)\n• عامل لوجستي - حملة اليونيسف للتطعيم ضد شلل الأطفال (سبتمبر - أكتوبر 2024)\n\nمتخصص في دعم تقنية المعلومات وصيانة الأجهزة والأمن السيبراني وإدارة الأنظمة.'
+    en: 'I have over 5 years of practical experience in IT support and computer maintenance. Currently volunteering as an ICT Specialist with the Palestinian Red Crescent Society since January 2024. I also work as a self-employed IT Technician and Programmer since 2019.',
+    ar: 'لدي أكثر من 5 سنوات من الخبرة العملية في دعم تقنية المعلومات وصيانة الحاسوب. أعمل حالياً كمتطوع متخصص تقنية معلومات مع جمعية الهلال الأحمر الفلسطيني منذ يناير 2024. أعمل أيضاً كفني تقنية معلومات ومبرمج عامل حر منذ 2019.'
   },
   'projects': {
-    en: '🚀 Featured Projects:\n\n1️⃣ ProLaptop Ultimate v3.3\n• Advanced Windows maintenance & cybersecurity framework\n• 100+ integrated tools across 7 modules\n• System optimization, security scanning, malware removal\n\n2️⃣ Library Management System\n• Java-based console application\n• Full OOP principles implementation\n• Complete CRUD operations for book & member management',
-    ar: '🚀 المشاريع البارزة:\n\n1️⃣ ProLaptop Ultimate v3.3\n• إطار عمل متقدم لصيانة Windows والأمن السيبراني\n• 100+ أداة متكاملة عبر 7 وحدات\n• تحسين النظام وفحص الأمان وإزالة البرامج الضارة\n\n2️⃣ نظام إدارة المكتبة\n• تطبيق قائم على Java\n• تطبيق كامل لمبادئ OOP\n• عمليات CRUD كاملة لإدارة الكتب والأعضاء'
+    en: 'My main projects are: 1) ProLaptop Ultimate v3.1 - A 100-tool Windows maintenance and cybersecurity framework with 7 modules. 2) Library Management System - A Java-based console application using OOP principles with complete CRUD operations.',
+    ar: 'مشاريعي الرئيسية هي: 1) ProLaptop Ultimate v3.1 - إطار عمل يحتوي على 100 أداة لصيانة Windows والأمن السيبراني مع 7 وحدات. 2) نظام إدارة المكتبة - تطبيق قائم على Java يستخدم مبادئ OOP مع عمليات CRUD كاملة.'
   },
   'certifications': {
-    en: '🏆 17+ Professional Certifications:\n• Cisco Networking Academy (CCNA, Network Fundamentals)\n• NVIDIA (AI on Jetson Nano)\n• TryHackMe (Cybersecurity & Ethical Hacking)\n• Edraak ICDL (Computer Fundamentals)\n• HP LIFE (Digital Literacy)\n• Coursera (Multiple courses)\n\nCovering: Networking, Cybersecurity, AI, Computer Skills, Design & Business',
-    ar: '🏆 17+ شهادة احترافية:\n• أكاديمية Cisco للشبكات (CCNA، أساسيات الشبكات)\n• NVIDIA (الذكاء الاصطناعي على Jetson Nano)\n• TryHackMe (الأمن السيبراني والقرصنة الأخلاقية)\n• Edraak ICDL (أساسيات الحاسوب)\n• HP LIFE (محو الأمية الرقمية)\n• Coursera (دورات متعددة)\n\nتغطي: الشبكات، الأمن السيبراني، الذكاء الاصطناعي، مهارات الحاسوب، التصميم والأعمال'
+    en: 'I hold 17+ certifications from prestigious organizations including Cisco Networking Academy, NVIDIA, TryHackMe, Edraak ICDL, HP LIFE, and Coursera. My certifications cover networking, cybersecurity, computer skills, AI, design, and business skills.',
+    ar: 'أحمل 17+ شهادة من منظمات مرموقة بما في ذلك أكاديمية Cisco للشبكات و NVIDIA و TryHackMe و Edraak ICDL و HP LIFE و Coursera. تغطي شهاداتي الشبكات والأمن السيبراني ومهارات الحاسوب والذكاء الاصطناعي والتصميم ومهارات الأعمال.'
   },
   'education': {
     en: 'I am pursuing a Diploma in Cybersecurity at the University College of Applied Sciences (UCAS) since July 2023. I also completed my High School Certificate from Haroun Al-Rasheed High School in 2022.',
@@ -39,12 +39,12 @@ const chatbotResponses: Record<string, { en: string; ar: string }> = {
     ar: 'يمكنك التواصل معي من خلال: البريد الإلكتروني: mahmood.kullab2004@gmail.com، الهاتف: +970 599 548 716، LinkedIn: m-kullab، GitHub: mahmoud-kullab'
   },
   'hello': {
-    en: '👋 Welcome! I\'m Mahmoud Sami Kullab\n🎓 ICT Specialist & Cybersecurity Student\n📍 Khan Younis, Gaza Strip\n\nI\'m here to help! Ask me about:\n✅ My skills & expertise\n✅ Professional experience\n✅ Projects & achievements\n✅ Certifications & education\n✅ How to contact me\n\nWhat would you like to know?',
-    ar: '👋 مرحباً! أنا محمود سامي كلاب\n🎓 متخصص تقنية معلومات وطالب أمن سيبراني\n📍 خان يونس، قطاع غزة\n\nأنا هنا للمساعدة! اسأل عن:\n✅ مهاراتي وخبرتي\n✅ خبرتي المهنية\n✅ مشاريعي وإنجازاتي\n✅ شهاداتي وتعليمي\n✅ كيفية التواصل معي\n\nماذا تريد أن تعرف؟'
+    en: 'Hello! I\'m Mahmoud Sami Kullab, an ICT Specialist and Cybersecurity student. How can I help you today? Feel free to ask about my skills, experience, projects, certifications, or anything else!',
+    ar: 'مرحباً! أنا محمود سامي كلاب، متخصص تقنية معلومات وطالب أمن سيبراني. كيف يمكنني مساعدتك اليوم؟ لا تتردد في السؤال عن مهاراتي أو خبرتي أو مشاريعي أو شهاداتي أو أي شيء آخر!'
   },
   'default': {
-    en: '💡 Great question! I didn\'t quite catch that. Try asking about:\n• Skills & Expertise\n• Experience & Work\n• Projects\n• Certifications\n• Education\n• Contact Information',
-    ar: '💡 سؤال رائع! لم أفهم تماماً. حاول السؤال عن:\n• المهارات والخبرة\n• الخبرة المهنية\n• المشاريع\n• الشهادات\n• التعليم\n• معلومات التواصل'
+    en: 'Thanks for your question! I\'m here to help. You can ask me about my skills, experience, projects, certifications, education, or how to contact me.',
+    ar: 'شكراً على سؤالك! أنا هنا للمساعدة. يمكنك أن تسأل عن مهاراتي أو خبرتي أو مشاريعي أو شهاداتي أو تعليمي أو كيفية التواصل معي.'
   }
 };
 
@@ -135,17 +135,17 @@ export function Chatbot() {
       {isOpen && (
         <Card className="fixed bottom-24 right-6 w-96 h-96 bg-background border-border shadow-2xl z-40 flex flex-col overflow-hidden">
           {/* Header */}
-          <div className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 p-4 text-white">
-            <h3 className="font-bold text-lg">🤖 {t('chatbot.title', language)}</h3>
-            <p className="text-sm opacity-90">{language === 'ar' ? 'اسأل عن خبرتي ومهاراتي' : 'Ask about my expertise'}</p>
+          <div className="bg-gradient-to-r from-cyan-400 to-blue-600 p-4 text-white">
+            <h3 className="font-bold text-lg">{t('chatbot.title', language)}</h3>
+            <p className="text-sm opacity-90">Ask me about my skills and experience</p>
           </div>
 
           {/* Messages */}
           <div className="flex-1 overflow-y-auto p-4 space-y-4">
             {messages.length === 0 && (
               <div className="text-center text-muted-foreground text-sm py-8">
-                <p className="text-lg mb-2">👋 {language === 'ar' ? 'مرحباً!' : 'Hello!'}</p>
-                <p className="text-xs">{language === 'ar' ? 'اسأل عن مهاراتي وخبرتي' : 'Ask about my skills and experience'}</p>
+                <p>{t('chatbot.title', language)}</p>
+                <p className="text-xs mt-2">{t('chatbot.placeholder', language)}</p>
               </div>
             )}
             {messages.map(msg => (
@@ -154,10 +154,10 @@ export function Chatbot() {
                 className={`flex ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}
               >
                 <div
-                  className={`max-w-xs px-4 py-2 rounded-lg whitespace-pre-wrap ${
+                  className={`max-w-xs px-4 py-2 rounded-lg ${
                     msg.sender === 'user'
                       ? 'bg-cyan-500/20 text-cyan-400 border border-cyan-400/30'
-                      : 'bg-blue-500/20 text-blue-300 border border-blue-400/30'
+                      : 'bg-blue-500/20 text-blue-400 border border-blue-400/30'
                   }`}
                 >
                   <p className="text-sm">{msg.text}</p>
