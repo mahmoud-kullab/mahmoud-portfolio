@@ -149,7 +149,7 @@ export default function Home() {
                 {t('hero.hireMe', language)}
               </a>
               <a 
-                href="https://files.manuscdn.com/user_upload_by_module/session_file/310519663287825236/PbMODnWwWexksCUx.pdf"
+                href="https://d2xsxph8kpxj0f.cloudfront.net/310519663287825236/KdZfWzd2ApvpmrcKiZVpvZ/CV-7e5c2b8f.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 border border-cyan-400 text-cyan-400 font-semibold rounded-lg hover:bg-cyan-400/10 transition flex items-center gap-2"
