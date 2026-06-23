@@ -1,3 +1,4 @@
+import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -9,6 +10,8 @@ import { useApp } from "@/contexts/AppContext";
 import { t } from "@/data/translations";
 import { certificates, categoryColors } from "@/data/certificates";
 import { Chatbot } from "@/components/Chatbot";
+import { ContactForm } from "@/components/ContactForm";
+import { BlogSection } from "@/components/BlogSection";
 
 interface Review {
   id: string;
@@ -19,6 +22,10 @@ interface Review {
 }
 
 export default function Home() {
+  // The userAuth hooks provides authentication state
+  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
+  let { user, loading, error, isAuthenticated, logout } = useAuth();
+
   const { language, setLanguage, isDark, setIsDark } = useApp();
   const [selectedCertCategory, setSelectedCertCategory] = useState("all");
   const [reviews, setReviews] = useState<Review[]>([
@@ -519,60 +526,11 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Blog Section */}
+        <BlogSection />
+
         {/* Contact Section */}
-        <section id="contact" className="py-20 px-4 bg-card/50">
-          <div className="container max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8">{t('contact.title', language)}</h2>
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <Card className="p-6 bg-background border-border hover:border-cyan-400/50 transition">
-                <div className="flex items-center gap-3 mb-3">
-                  <Mail className="text-cyan-400" size={20} />
-                  <span className="font-semibold">{t('contact.email', language)}</span>
-                </div>
-                <a href="mailto:mahmood.kullab2004@gmail.com" className="text-cyan-400 hover:text-cyan-300">
-                  mahmood.kullab2004@gmail.com
-                </a>
-              </Card>
-
-              <Card className="p-6 bg-background border-border hover:border-cyan-400/50 transition">
-                <div className="flex items-center gap-3 mb-3">
-                  <Phone className="text-cyan-400" size={20} />
-                  <span className="font-semibold">{t('contact.phone', language)}</span>
-                </div>
-                <a href="tel:+970599548716" className="text-cyan-400 hover:text-cyan-300">
-                  +970 599 548 716
-                </a>
-              </Card>
-
-              <Card className="p-6 bg-background border-border hover:border-cyan-400/50 transition">
-                <div className="flex items-center gap-3 mb-3">
-                  <Linkedin className="text-cyan-400" size={20} />
-                  <span className="font-semibold">{t('contact.linkedin', language)}</span>
-                </div>
-                <a href="https://linkedin.com/in/m-kullab" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300">
-                  linkedin.com/in/m-kullab
-                </a>
-              </Card>
-
-              <Card className="p-6 bg-background border-border hover:border-cyan-400/50 transition">
-                <div className="flex items-center gap-3 mb-3">
-                  <Github className="text-cyan-400" size={20} />
-                  <span className="font-semibold">{t('contact.github', language)}</span>
-                </div>
-                <a href="https://github.com/mahmoud-kullab" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300">
-                  github.com/mahmoud-kullab
-                </a>
-              </Card>
-            </div>
-
-            <div className="text-center">
-              <p className="text-gray-400 mb-4">{t('contact.ready', language)}</p>
-              <a href="mailto:mahmood.kullab2004@gmail.com" className="inline-block px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-black font-semibold rounded-lg transition">
-                {t('contact.sendMessage', language)}
-              </a>
-            </div>
-          </div>
-        </section>
+        <ContactForm />
 
         {/* Footer */}
         <footer className="py-8 px-4 border-t border-border text-center text-sm text-gray-500">
