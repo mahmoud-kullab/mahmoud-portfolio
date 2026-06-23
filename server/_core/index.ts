@@ -36,6 +36,11 @@ async function startServer() {
   app.use(express.urlencoded({ limit: "50mb", extended: true }));
   registerStorageProxy(app);
   registerOAuthRoutes(app);
+  
+  // CV Download Route
+  app.get('/api/download-cv', (req, res) => {
+    res.redirect('/manus-storage/CV_updated_ce1530db.pdf');
+  });
   // tRPC API
   app.use(
     "/api/trpc",
