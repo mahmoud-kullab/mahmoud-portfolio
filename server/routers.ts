@@ -6,6 +6,7 @@ import { z } from "zod";
 import { getDb } from "./db";
 import { contactMessages, blogPosts } from "../drizzle/schema";
 import { notifyOwner } from "./_core/notification";
+import { desc, eq, or } from "drizzle-orm";
 
 export const appRouter = router({
   system: systemRouter,
@@ -32,7 +33,7 @@ export const appRouter = router({
         const db = await getDb();
         if (!db) throw new Error("Database not available");
         
-        const result = await db.insert(contactMessages).values(input);
+        await db.insert(contactMessages).values(input);
         
         // Notify owner
         await notifyOwner({
@@ -48,7 +49,6 @@ export const appRouter = router({
     list: publicProcedure.query(async () => {
       const db = await getDb();
       if (!db) return [];
-      const { desc } = require('drizzle-orm');
       return await db.select().from(blogPosts).orderBy(desc(blogPosts.published));
     }),
     
@@ -57,7 +57,6 @@ export const appRouter = router({
       .query(async ({ input }) => {
         const db = await getDb();
         if (!db) return null;
-        const { or, eq } = require('drizzle-orm');
         const posts = await db.select().from(blogPosts).where(or(eq(blogPosts.slugEn, input.slug), eq(blogPosts.slugAr, input.slug))).limit(1);
         return posts[0] || null;
       }),

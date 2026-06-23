@@ -156,7 +156,7 @@ export default function Home() {
                 {t('hero.hireMe', language)}
               </a>
               <a 
-                href="/manus-storage/CV_updated_966bc4d8.pdf"
+                href="/manus-storage/CV_49e9235a.pdf"
                 download="Mahmoud_Sami_Kullab_CV.pdf"
                 className="px-6 py-3 border border-cyan-400 text-cyan-400 font-semibold rounded-lg hover:bg-cyan-400/10 transition flex items-center gap-2"
               >
